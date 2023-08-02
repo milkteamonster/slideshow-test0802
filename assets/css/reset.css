@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* ===========================================================
+	Title:	reset.css
+	Last Created:	2015-12-21
+	
+=========================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	/*font-weight: normal;
+	font-style: normal;*/
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+}
+html {
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	/*font-style: normal;*/
+}
+a {
+	outline: none;
+	text-decoration: underline;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: inherit;
+}
+caption,th {
+	text-align: left;
+}
+q:before,q:after {
+	content: '';
+}
+object,
+embed {
+	vertical-align: top;
+}
+hr,legend {
+	display: none;
+}
+img,abbr,acronym,fieldset {
+	border: 0;
+}
+img {
+	vertical-align: baseline;
+}
+li {
+	list-style-type: none;
+}

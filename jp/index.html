@@ -1,0 +1,325 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="ja"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="ja"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="ja"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="ja"> <![endif]-->
+<!--[if gt IE 9]><!-->
+
+<html class="no-js" lang="ja">
+<!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title></title>
+
+<link rel="icon" href="../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+
+
+<!-- css -->
+
+<link rel="stylesheet" href="../assets/css/reset.css" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="../assets/css/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../assets/css/contents.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"> -->
+
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+<!-- js -->
+<script type="text/javascript" src="/assets/js/prefixfree.min.js"></script>
+<script type="text/javascript" src="/assets/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.exflexfixed-0.3.0.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/assets/js/yuga.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+<script type="text/javascript" src="/assets/js/global.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.slicknav.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/assets/js/ie/css3-mediaqueries.js"></script>
+<script src="/assets/js/ie/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body class="ja cat-home js-top-header">
+<header class="global-header">
+	<div class="header__inner">
+		<h1 class="header__title"><a href="/jp/"><img src="../assets/img/common/mainlogo.svg" alt=""/></a></h1>
+
+
+		<nav class="global-menu">
+			<div class="global-menu-wrap">
+				<div class="global-menu__company_name">
+					<ul>
+						<li>株式会社</li>
+						<li class="mitsui-private"><a href="https://www.mbkpr.co.jp/" target="_blank"></a></li>
+					</ul>
+				</div>
+				<div class="global-menu-wrap__inner">
+					<div class="global-menu__sub-navigation">
+						<ul class="global-sub-navigation__language">
+							<li><a href="/en/" title="English">ENGLISH</a></li>
+						</ul>
+					</div>
+					<div class="global-menu__navigation dropdown">
+					<ul class="gn link-reverse">
+						<li id="global-menu__navigation__business"><a href="/jp/business/"class="global-menu__navigation__primary"><span>事業内容・実績</span></a>
+								<ul class="global-menu__navigation__secondary" style="display: none;">
+									<li><a href="/jp/business/">事業内容・実績</a></li>
+									<li><a href="/jp/business/mbrm_fund.html">MBRMファンド</a></li>
+									<li><a href="/jp/business/development.html">開発型ファンド</a></li>
+									<li><a href="/jp/business/datacenter.html">データセンター事業</a></li>
+								</ul></li>
+						<li id="global-menu__navigation__company"><a href="/jp/company/"  class="global-menu__navigation__primary"><span>会社情報</span></a>
+						<ul class="global-menu__navigation__secondary" style="display: none;">
+							<li><a href="/jp/company/">ご挨拶</a></li>
+							<li><a href="/jp/company/philosophy.html">経営理念</a></li>
+							<li><a href="/jp/company/outline.html">会社概要</a></li>
+							<li><a href="/jp/company/history.html">沿革</a></li>
+						</ul>
+						</li>
+						<li id="global-menu__navigation__sustainability"><a href="/jp/sustainability/"  class="global-menu__navigation__primary"><span>サステナビリティ</span></a>
+						<ul class="global-menu__navigation__secondary" style="display: none;">
+							<li><a href="/jp/sustainability/" style="letter-spacing: -1px;">方針・体制・イニシアティブ</a></li>
+							<li><a href="/jp/sustainability/environment.html">環境への取り組み</a></li>
+							<li><a href="/jp/sustainability/society.html">社会への取り組み</a></li>
+							<li><a href="/jp/sustainability/employee.html">従業員への取り組み</a></li>
+							<li><a href="/jp/sustainability/certification.html">外部評価・認証取得</a></li>
+							<li><a href="/jp/sustainability/governance.html">ガバナンス</a></li>
+						</ul>
+						</li>
+						<li id="global-menu__navigation__employ"><a href="/jp/employ/" class="global-menu__navigation__primary"><span>採用情報</span></a>
+						</li>
+
+						<li id="global-menu__navigation__contact"><a href="/jp/contact/" class="global-menu__navigation__primary"><span>お問い合わせ</span></a>
+						</li>
+						<div class="slicknav-sublink">
+							<p><a href="/en/"><img src="/assets/img/common/english-icon.png" width="311"></a></p>
+							<p><a href="https://www.mbkpr.co.jp/" target="_blank"><img src="/assets/img/common/mainlogo_ja_sp.png" width="311"></a></p>
+						</div>
+					</ul>
+					</div><!-- global-menu__navigation -->
+				</div><!-- global-menu-wrap__inner -->
+			</div>
+			
+		</nav>
+	</div>
+</header>
+
+<div id="main_wrap">
+	<main id="main">
+		<!-- <div class="top-kv">
+			<div class="top-kv-title">
+				<div class="top-kv-title-in">
+				<h1><p>私たちは、<span>「顧客第一主義」</span>の</p><br>
+				<p>アセットマネジメント会社です。</p>
+				</h1>
+				<p>We always make a sincere effort for all stakeholders</p>
+				</div>
+			</div>
+		</div> -->
+
+		<div id="slider">
+			<img src="../assets/img/top/munu-ph-kv-01.jpg">
+			<div class="slider-txt-inner">
+				<h1><p>私たちは、<span>「顧客第一主義」</span>の</p><br>
+				<p>アセットマネジメント会社です。</p>
+				</h1>
+				<p>We always make a sincere effort for all stakeholders</p>
+			</div>
+			<ul class="slider-dot">
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+			</ul>
+		</div>
+		
+
+
+			<div id="top-news" class="top-news js-fadein">
+				<div class="top-news-list">
+					<div class="news-title">
+						<h2 class="t">ニュース<span>NEWS</span></h2>
+						<!-- <p class="b"><a href="/jp/news/">VIEW MORE</a></p> -->
+					</div>
+					<div class="news-list">
+						<dl>
+							<dt>2023.05.19</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230519.pdf" target="_blank">AM業務受託に関するお知らせ（相鉄グランドフレッサ 熊本）</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2023.03.31</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230331.pdf" target="_blank">開発型私募ファンド（データセンター4号案件）新規組成並びに土地追加取得に関するお知らせ</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2023.03.30</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230330.pdf" target="_blank">気候変動への取り組みに関するポリシーの制定、TCFD提言への賛同表明並びにマテリアリティの特定に関するお知らせ</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2023.03.14</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230314.pdf" target="_blank">データセンター施設（京阪奈DC）一部竣工に関するお知らせ</a></p>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>2023.02.03</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230203.pdf" target="_blank">私募REITの新投資口発行並びに国内不動産信託受益権の取得に関するお知らせ</a></p>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>2023.01.31</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230131.pdf" target="_blank">旗艦ファンド（MBRM ファンド）の資産総額が400 億円を突破並びにAM業務受託に関するお知らせ（都心の築浅大型オフィスビル・堺筋ベストビル）</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2023.01.31</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20230131_2.pdf" target="_blank">物流施設（加須LC）竣工に関するお知らせ</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2023.10.21</dt>
+							<dd>
+								<p><a href="/jp/news/pdf/20221021.pdf" target="_blank">AM業務受託に関するお知らせ（フルルガーデン八千代）</a></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="news-btn">
+						<p class="b">
+							<a href="/jp/news/">VIEW MORE</a></p>
+					</div>
+				</div>
+			</div>
+
+			 <div class="top-banner top-section js-fadein"> <!-- js-fadein -->
+				<div class="career">
+					<a href="/jp/employ/">
+						<img src="../assets/img/top/career_bg.png" class="pc">
+						<img src="../assets/img/top/career_bg_sp.png" class="sp">
+						<div class="top-banner-inner">
+							<span class="career-inner-sub">採用強化中</span>
+							<span class="career-inner-slogan">一緒に働く。</span>
+						</div>
+					</a>
+				</div>
+				<div class="propertie js-fadein"> <!-- js-fadein -->
+					<a href="/jp/propertie-recruitment/">
+						<img src="../assets/img/top/propertie_bg.png" class="pc">
+						<img src="../assets/img/top/propertie_bg_sp.png" class="sp">
+						<div class="top-banner-propertie-inner">
+							<span class="propertie-inner-slogan">投資不動産、<br class="sp">事業用地の募集</span>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="top-banner top-section js-fadein">
+				<div class="achivement a-hover">
+					<!-- <a href="#"> -->
+						<img src="../assets/img/top/achivement_bg.png" class="pc">
+						<img src="../assets/img/top/achivement_bg_sp.png" class="sp">
+						<div class="banner-title">
+							<h2 class="t">事業内容・実績
+								<span>ACTIVITIES, ACHIVEMENTS</span></h2>
+							<p class="b-plus view-more-btn">
+								<span>VIEW MORE</span>
+							</p>
+							<div class="banner-list">
+							<ul>
+								<li><a href="/jp/business/index.html#b01">代表的な運用物件</a></li>
+								<li><a style="letter-spacing: -0.5px;" href="/jp/business/index.html#b02">ハイパースケール・データセンターの取組</a></li>
+								<li><a href="/jp/business/index.html#b03">物流施設開発案件の取組み</a></li>
+							</ul></div>
+						</div>
+						
+					<!-- </a> -->
+				</div>
+				<div class="about js-fadein a-hover">
+					<!-- <a href="#"> -->
+						<img src="../assets/img/top/about_bg.png" class="pc">
+						<img src="../assets/img/top/about_bg_sp.png" class="sp">
+						<div class="banner-title">
+							<h2 class="t">会社情報<span>ABOUT US</span></h2>
+							<p class="b-plus view-more-btn-2">
+								<span>VIEW MORE</span>
+							</p>						
+							<div class="banner-list-2">
+							<ul>
+								<li><a href="/jp/company/index.html">ご挨拶</a></li>
+								<li><a href="/jp/company/philosophy.html">経営理念</a></li>
+								<li><a href="/jp/company/outline.html">会社概要</a></li>
+								<li><a href="/jp/company/history.html">沿革</a></li>
+							</ul></div>
+							
+						</div>
+					<!-- </a> -->
+				</div>
+			</div>
+
+			<div class="top-sustainability top-section js-fadein">
+				<img src="../assets/img/top/sustainability_bg.jpg" class="pc">
+				<img src="../assets/img/top/sustainability_bg_sp.png" class="sp">
+				<div class="banner-title">
+					<h2 class="t">サステナビリティ<span>SUSTAINABILITY</span></h2>
+					<p class="b"><a href="/jp/sustainability/">VIEW MORE</a></p>
+				</div>
+				
+			</div>
+
+		</main>
+
+		<!-- footer -->
+		<!-- <p id="bt-pagetop"><a href="#pagetop"><span>このページの先頭へ</span></a></p> -->
+		<footer id="footer">
+			<div class="footer-inner">
+			<ul class="footer-nav-menu">
+				<li><a href="/jp/business/">事業内容・実績</a></li>
+				<li><a href="/jp/company/">会社情報</a></li>
+				<li><a href="/jp/sustainability/">サステナビリティ</a></li>
+				<li><a href="/jp/employ/">採用情報</a></li>
+				<li><a href="/jp/contact/">お問い合わせ</a></li>
+			</ul>
+			<ul class="footer-nav-menu-other">
+				<li><a href="/jp/privacy/">個人情報保護方針</a></li>
+				<li><a href="/jp/advertising/"> 金融商品取引法に基づく広告等の表示</a></li>
+				<li><a href="/jp/basic/">反社会的勢力への対応基本方針</a></li>
+				<li><a href="/jp/customer/">お客様本位の業務運営に関する方針</a></li>
+			</ul>
+
+			<div class="add">
+				<h2><img src="../assets/img/common/footer_logo.svg" width="461" alt="三井物産リアルティ・マネジメント株式会社"/></h2>
+				<p>〒101-0065 東京都千代田区西神田3-2-1<br class="sp"> 千代田ファーストビル南館<span>TEL:03-5210-8940（代表）</span></p>
+			</div>
+			
+		</div>
+		</footer>
+	</div>
+<script type="text/javascript" src="/assets/js/top.js"></script>
+</body>
+</html>
