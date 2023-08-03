@@ -31,14 +31,38 @@
 	
 		function switchDot(){
 			// var sliderDot = document.querySelector(".slider-dot");
-			var dot = document.querySelector(".dot");
-			console.log(dot);
-			dot.setAttribute("class", "dot active-dot");
+			
+			// var dot = document.querySelector(".dot");
+			// console.log(dot);
+			// dot.setAttribute("class", "dot active-dot");
 			
 			// dot.addEventListener("click", function(){
 			// 	dot.setAttribute("class", "active-dot");
 			// })
 		}
+
+		//dotのルール
+		const sliderDot = document.querySelector(".slider-dot");
+		const dot1 = document.querySelector(".dot1");
+		const dot2 = document.querySelector(".dot2");
+		const dot3 = document.querySelector(".dot3");
+		const dot4 = document.querySelector(".dot4");
+		const dot5 = document.querySelector(".dot5");
+		const dot6 = document.querySelector(".dot6");
+		const dot7 = document.querySelector(".dot7");
+		const dot8 = document.querySelector(".dot8");
+		const dot9 = document.querySelector(".dot9");
+		let dotArr = [dot1, dot2, dot3, dot4, dot5, dot6, dot7, dot8, dot9]
+		dotArr.forEach(function(item, index){
+			item.addEventListener("click", function(){
+				item.classList.add("active-dot");
+				setTimeout(function () {
+				 	item.classList.remove("active-dot");
+				 }, 1000);
+			})
+		})
+
+
 		// 画像を切り替える関数
 		function switchImage() {
 			// 現在の画像を非表示にする

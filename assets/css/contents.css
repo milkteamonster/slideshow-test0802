@@ -100,7 +100,8 @@
 	justify-content: center;
 	width: 100%;
   }
-  .dot{
+
+  .dot1,.dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9{
 	width: 12px;
 	height: 12px;
 	background-color: #bebaba;
