@@ -1,5 +1,6 @@
 ///////////////// メインビジュアルスライダー１枚目固定、2枚目以降ランダムの設定
 	// ランダムな画像のURLのリスト
+	
 	var randomImages = [
 		"../assets/img/top/munu-ph-kv-02.jpg",
 		"../assets/img/top/munu-ph-kv-03.jpg",
@@ -13,13 +14,13 @@
 	
 		// スライダーの要素を取得
 	var slider = document.getElementById("slider");
-	var dotElem = document.querySelectorAll(".dot");
-	dotElem.forEach(function(item){
-		this.addEventListener("click", function(){
-			item.setAttribute("class", "dot active-dot");
-		})
+	// var dotElem = document.querySelectorAll(".dot");
+	// dotElem.forEach(function(item){
+	// 	this.addEventListener("click", function(){
+	// 		item.setAttribute("class", "dot active-dot");
+	// 	})
 
-	})
+	// })
 
 		// 最初の画像（01.jpg）を表示する関数
 		function showFirstImage() {
@@ -28,40 +29,6 @@
 			firstImage.style.opacity = 1;
 			slider.appendChild(firstImage);
 		}
-	
-		function switchDot(){
-			// var sliderDot = document.querySelector(".slider-dot");
-			
-			// var dot = document.querySelector(".dot");
-			// console.log(dot);
-			// dot.setAttribute("class", "dot active-dot");
-			
-			// dot.addEventListener("click", function(){
-			// 	dot.setAttribute("class", "active-dot");
-			// })
-		}
-
-		//dotのルール
-		const sliderDot = document.querySelector(".slider-dot");
-		const dot1 = document.querySelector(".dot1");
-		const dot2 = document.querySelector(".dot2");
-		const dot3 = document.querySelector(".dot3");
-		const dot4 = document.querySelector(".dot4");
-		const dot5 = document.querySelector(".dot5");
-		const dot6 = document.querySelector(".dot6");
-		const dot7 = document.querySelector(".dot7");
-		const dot8 = document.querySelector(".dot8");
-		const dot9 = document.querySelector(".dot9");
-		let dotArr = [dot1, dot2, dot3, dot4, dot5, dot6, dot7, dot8, dot9]
-		dotArr.forEach(function(item, index){
-			item.addEventListener("click", function(){
-				item.classList.add("active-dot");
-				setTimeout(function () {
-				 	item.classList.remove("active-dot");
-				 }, 1000);
-			})
-		})
-
 
 		// 画像を切り替える関数
 		function switchImage() {
@@ -111,7 +78,6 @@
 		// 5秒ごとに画像を切り替えるタイマーを開始
 		setInterval(function () {
 			switchImage();
-			switchDot();
 		}, 5000);
 
 		// ページが読み込まれた時に最初の画像を表示
@@ -119,6 +85,63 @@
 		showFirstImage();
 		switchImage();
 	};
+
+	const firstImage = '../assets/img/top/munu-ph-kv-01.jpg';
+	const copiedRandomImages = [...randomImages];
+	copiedRandomImages.unshift(firstImage);
+
+	document.addEventListener("DOMContentLoaded", function () {
+	//dotのルール
+	const sliderDot = document.querySelector(".slider-dot");
+	const imageNum = copiedRandomImages.length;
+	for (let i = 0; i < imageNum; i++) {
+		const li = document.createElement("li");
+		const dot = li.classList.add("dot");
+		sliderDot.appendChild(li);
+	
+		// li.forEach(function(item, index){
+		// 	li.addEventListener("click", function(){
+		// 		li.classList.add("active-dot");
+		// 	})
+		// })
+	}
+	const dots = document.querySelectorAll(".dot");
+    dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+			switchImageByIndex(index);
+			switchActiveDot(index);
+        });
+    });
+	function switchImageByIndex(index) {
+		var currentImage = slider.querySelector("img");
+		currentImage.style.opacity = 0;
+		var newImageElement = document.createElement("img");
+		newImageElement.style.opacity = 0;
+		newImageElement.src = randomImages[index];
+		slider.appendChild(newImageElement);
+	
+		// フェードイン
+		setTimeout(function () {
+			newImageElement.style.opacity = 1;
+		}, 2000);
+
+		// 現在の画像を削除
+		setTimeout(function () {
+			slider.removeChild(currentImage);
+		}, 1000);
+	}
+	function switchActiveDot(index){
+		dots.forEach(function (dot, i) {
+		if (i === index) {
+			dot.classList.add("active-dot");
+		} else {
+			dot.classList.remove("active-dot");
+		}
+		});
+	}
+});
+
+
 
 
 ///////////////// TOPページ 事業内容・実績 / 会社情報 VIEW MOREボタンの設定
